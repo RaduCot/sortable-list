@@ -1,0 +1,97 @@
+.test-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1a2e50;
+}
+.test-container1 {
+  width: auto;
+  height: auto;
+  margin: var(--dl-space-space-unit);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.test-text {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  align-self: center;
+  font-family: Poppins;
+  font-weight: 700;
+}
+.test-text01 {
+  font-family: Poppins;
+}
+.save-button {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  width: auto;
+  height: var(--dl-size-size-small);
+  align-self: center;
+  transition: 0.3s;
+  font-family: Poppins;
+  border-width: 0px;
+  border-radius: 32px;
+  margin-left: var(--dl-space-space-unit);
+  background-color: rgb(55, 84, 249);
+}
+.save-button:hover {
+  border: none;
+  border-color: #542794;
+  border-style: solid;
+  border-width: 0px;
+  background-color: #6037f9;
+}
+.list-container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  position: relative;
+  align-items: center;
+  border-color: #ffffff;
+  border-style: dashed;
+  border-width: 4px;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.list-item {
+  cursor: move;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  margin-bottom: var(--dl-space-space-halfunit);
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  justify-content: flex-start;
+  background-color: #ffffff;
+  transition: margin 0.5s ease-in, background-color 0.2s ease-in-out;
+}
+
+.list-item.dragging {
+  background-color: rgb(55, 84, 249);
+}
+
+.drag-icon {
+  margin-right: var(--dl-space-space-halfunit);
+}
+.avatar {
+  width: var(--dl-size-size-small);
+  object-fit: cover;
+  margin-right: var(--dl-space-space-unit);
+  border-radius: 64px;
+}
+.name {
+  font-family: Poppins;
+}
